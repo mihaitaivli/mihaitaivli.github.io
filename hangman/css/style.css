@@ -1,0 +1,44 @@
+.letterHolder{
+    border-bottom: 1px solid black;
+    margin-right: 1em;
+    font-family: sans-serif;
+    font-size: larger;
+    min-width: 1em;
+    display: inline-block;
+    text-align: center;
+}
+
+h2, button, #wordToGuess, #usedLetters{
+    margin: 1em;
+}
+
+.hiddenLetter{
+    visibility: hidden;
+}
+
+section{
+    margin: 2em 1em;
+}
+
+#letter{
+    width: 1em;
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+#usedLettersList{
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+.animatedLine{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: offset 1s linear forwards;
+}
+
+@keyframes offset {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

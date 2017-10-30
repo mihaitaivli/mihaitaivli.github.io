@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <svg width="300" height="300">
+        <path id="9" d="M 10 290 V 10" stroke="black" stroke-width="3" visibility="hidden"></path>
+        <path id="8" d="M 10 10 H 150" stroke="black" stroke-width="3" visibility="hidden"></path>
+        <path id="7" d="M 150 10 V 50" stroke="black" stroke-width="3" visibility="hidden"></path>
+        <path id="6" d="M 150 50
+         a 20 20 0 1 0 0.01 0" stroke="black" stroke-width="3" fill="transparent" visibility="hidden"></path>
+        <path id="5" d="M 150 90 V 150" stroke="black" stroke-width="3" visibility="hidden"></path>
+        <path id="4" d="M 150 90 L 130 120" stroke="black" stroke-width="3" visibility="hidden"></path>
+        <path id="3" d="M 150 90 L 170 120" stroke="black" stroke-width="3" visibility="hidden"></path>
+        <path id="2" d="M 150 150 L 170 190" stroke="black" stroke-width="3" visibility="hidden"></path>
+        <path id="1" d="M 150 150 L 130 190" stroke="black" stroke-width="3" visibility="hidden"></path>
+    </svg>
+    <h2>The word to guess</h2>
+    <div id="wordToGuess"></div>
+    <!--<form onsubmit="return false">-->
+    <section>
+        <h3>Enter a letter in the box below</h3>
+        <input type="text" id="letter" maxlength="1">
+        <button id="button">Try</button>
+        <p>Tap Enter or click the button.</p>
+    </section>
+    <!--</form>-->
+    <div id="usedLetters">
+        <h3>Letters used so far:</h3>
+        <p id="usedLettersList"></p>
+    </div>
+    
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>        
+    <script src="js/dict.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
